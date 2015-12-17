@@ -1,0 +1,19 @@
+Following are the points related to the Shell:
+
+1.The shell has built in functions:exit,pwd,cd,set.
+2.The shell will terminate if ctrl-D character is encountered.
+3.Shell supports external command myls whose path needs to be set using set command and myls executable should be kept at that path.
+4.Shell will support I/O redirection.
+5.The shell will support existing external commands in the system.
+6.The maximum command size is upto 80 characters after which rest of the characters will be ignored.
+7.For set MYPATH command the path size is limited to 69 chararcters as the maximum command size is upto 80 characters.
+8.Shell does not support any special characters.
+9.The path provided in set command is not validated.
+10.The path provided for MYPATH should be in terms of absolute path otherwise if we provide relative path and then change the directory while working on the Shell it would not be  able to find the myls command when we try to execute it.
+11.Piping commands and redirection would not be supported together.
+12.Number of parameters for the command is limited to 4 incase of piping commands. Example: ps -e|sort. -e is a parameter to ps command.
+13.Maximum 2 pipes will be supported in the shell.
+14.If in the ouput redirection the file exist it would overwrite the file.
+15.Largest file name that it can list in myls command is limited to 2000 characters.
+16.The shell does not support job control.
+17.The shell will support background processes when & is at the end of the command.
